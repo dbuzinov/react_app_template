@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^3.22.2",
+    "@blueprintjs/select": "^3.11.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build && yarn run build:dist",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:dist": "cd build && cp static/js/*.js static/js/bundle.js && cp static/css/*.css static/css/main.css",
+    "watch": "cra-build-watch --disable-chunks --public-path='/static/' --build-path='build/static'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cra-build-watch": "^3.0.0",
+    "node-sass": "^4.13.0",
+    "react-app-rewired": "^2.1.5",
+    "sass-loader": "^8.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+// normalize
+@import "~normalize.css";
+
+// bootstrap 4
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities/overflow";
+@import "~bootstrap/scss/utilities/text";
+
+@import "./assets/scss/styles.scss";
